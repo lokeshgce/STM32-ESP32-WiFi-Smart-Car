@@ -96,7 +96,7 @@ The following software tools are used for hardware design, PCB development, firm
 
 
 ## 12. Author
-Lokesh A.
+Lokesh A
 Electronics and Communication Engineering
 
 
