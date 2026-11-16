@@ -34,8 +34,7 @@ The project aims to combine wireless control, embedded system design, motor cont
 | 4 | **TB6612FNG Motor Driver (2 Nos.)** | Dual-channel DC motor driver ICs used together to control four DC motors with bidirectional speed control. |
 | 5 | **STDC14 Connector** | Standard 14-pin debugging and programming interface used for STM32 development through compatible ST-LINK tools. |
 | 6 | **Buzzer** | Provides an audible warning when the vehicle's tilt exceeds the predefined safety threshold. |
-| 7 | **Voltage Regulation Circuit** | Provides the required regulated supply voltages for the microcontroller, WiFi module, sensors, and motor driver logic. |
-| 8 | **Decoupling Capacitors** | Help reduce supply noise and voltage fluctuations, ensuring stable operation of electronic components. |
+| 7 | **Decoupling Capacitors** | Help reduce supply noise and voltage fluctuations, ensuring stable operation of electronic components. |
 
 ### Main Hardware Architecture
 
@@ -44,7 +43,63 @@ The project aims to combine wireless control, embedded system design, motor cont
 - **Tilt Detection:** LIS3DH
 - **Motor Control:** 2 × TB6612FNG
 - **Programming and Debugging:** STDC14
-- **Safety Indication:** Buzzer
+
+
+## System Architecture
+
+<img width="1536" height="1024" alt="Smart Car System Architecture" src="https://github.com/user-attachments/assets/58e4e887-5b24-4e77-943a-939d34d029fe" />
+
+
+## Circuit Design
+
+<img width="814" height="550" alt="Screenshot 2026-10-08 235948" src="https://github.com/user-attachments/assets/9a69aaf6-a6ed-4454-bc5f-2281662c568f" />
+
+
+## PCB Design
+
+### Top Layer
+
+<img width="502" height="551" alt="Screenshot 2026-11-16 185503" src="https://github.com/user-attachments/assets/f3004651-54da-41a5-8be5-d4a33457a67a" />
+
+### 3D View
+
+<img width="433" height="394" alt="image" src="https://github.com/user-attachments/assets/de882b12-8f03-453d-8f78-0f985d111309" />
+
+
+## Software and Tools
+
+The following software tools are used for hardware design, PCB development, firmware programming, and system testing.
+
+| Software / Tool | Purpose |
+|---|---|
+| **KiCad** | Schematic capture, component placement, PCB routing, and 3D PCB visualization. |
+| **STM32CubeIDE** | STM32G431CBT firmware development, compilation, debugging, and programming. |
+| **STM32CubeMX** | Microcontroller configuration, GPIO setup, clock configuration, and peripheral initialization. |
+| **Arduino IDE** | ESP32-C3-WROOM-02 firmware development and WiFi communication programming. |
+| **ST-LINK** | Programming and debugging the STM32 microcontroller through the STDC14 interface. |
+
+### Design and Development
+
+- **Hardware Design:** KiCad
+- **Microcontroller Programming:** STM32CubeIDE
+- **Wireless Communication:** ESP32 development environment
+- **Programming and Debugging:** ST-LINK
+
+
+## Future Improvements
+
+- **Obstacle Detection:** Integrate ultrasonic or LiDAR sensors to detect obstacles and improve vehicle navigation and driving safety.
+
+- **Mobile Application Integration:** Develop a dedicated mobile application for wireless vehicle control, live status updates, and remote monitoring.
+
+- **Cloud-Based Data Monitoring:** Implement cloud connectivity to store, visualize, and analyze vehicle data, including tilt measurements and operational parameters, for remote monitoring.
+
+
+## 12. Author
+Lokesh A.
+Electronics and Communication Engineering
+
+
 
 
 
